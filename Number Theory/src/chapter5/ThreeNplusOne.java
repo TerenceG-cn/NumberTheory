@@ -3,7 +3,7 @@ package chapter5;
 public class ThreeNplusOne {
 	public static void main(String[] args) {
 		int n,count,i;
-		for (i = 156; i < 159; i++) {
+		for (i = 1; i < 900; i++) {
 			n = i;
 			count = 1;
 			System.out.print(n);
@@ -13,7 +13,7 @@ public class ThreeNplusOne {
 				} else {
 					n = 3 * n + 1;
 				}
-				System.out.print(" "+n);
+				//System.out.print(" "+n);
 				count++;
 			}
 			System.out.println("\tËã·¨³¤¶È£º" + count);

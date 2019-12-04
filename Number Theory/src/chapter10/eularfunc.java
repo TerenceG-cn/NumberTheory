@@ -1,46 +1,65 @@
 package chapter10;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+ 
 public class eularfunc {
-	static int phi[]=new int[1000];
-//	static void euler(int n)
-//	{
-//	    for (int i=1;i<=n;i++) phi[i]=i;
-//	    for (int i=2;i<=n;i++)
-//	    {
-//	        if (phi[i]==i)//这代表i是质数
-//	        {
-//	            for (int j=i;j<=n;j+=i)
-//	            {
-//	                phi[j]=phi[j]/i*(i-1);//把i的倍数更新掉
-//	            }
-//	        }
-//	    }
-//	}
-	void euler(int n)
-	{
-		phi[1]=1;//1要特判 
-		for (int i=2;i<=n;i++)
-		{
-			if (flag[i]==0)//这代表i是质数 
-			{
-				prime[++num]=i;
-				phi[i]=i-1;
-			}
-			for (int j=1;j<=num&&prime[j]*i<=n;j++)//经典的欧拉筛写法 
-			{
-				flag[i*prime[j]]=1;//先把这个合数标记掉 
-				if (i%prime[j]==0)
-				{
-					phi[i*prime[j]]=phi[i]*prime[j];//若prime[j]是i的质因子，则根据计算公式，i已经包括i*prime[j]的所有质因子 
-					break;//经典欧拉筛的核心语句，这样能保证每个数只会被自己最小的因子筛掉一次 
-				}
-				else phi[i*prime[j]]=phi[i]*phi[prime[j]];//利用了欧拉函数是个积性函数的性质 
-			}
-		}
-	}
-
-	public static void main(String[] args) {
-		euler(100);
-	}
-
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int num=scanner.nextInt();
+        int a=num;
+        double oulaAnwser=0;
+        ArrayList<Integer> oulaList = new ArrayList<Integer>();
+        if (isPrime(num)){
+            oulaAnwser=num-1;
+        }else{
+            List<Integer> allPrime = getAllPrime(num);
+            for(int i : allPrime){
+                int tem=num;
+                num=repeatdivide(num,i);
+                if (tem!=num){
+                    oulaList.add(i);
+                }
+            }
+            oulaAnwser=a;
+            for (int j :oulaList){
+                 oulaAnwser=oulaAnwser*(1-(double)1/j);
+            }
+        }
+        System.out.println("欧拉函数的值为"+Math.round(oulaAnwser));
+    }
+    public static List<Integer> getAllPrime(int num){
+        ArrayList<Integer> result = new ArrayList<Integer>();
+        for (int i =2;i<num;i++){
+            if (isPrime(i)) {
+                result.add(i);
+            }
+        }
+        return result;
+    }
+    public static boolean isPrime(int num){
+        if(num < 2) {
+            return false;
+        }
+        for(int i = 2; i <= Math.sqrt(num); i++ ) {
+            if(num%i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+ 
+    public static boolean canbedivide(int num,int i ){
+        return num==1?false:num%i==0?true:false;
+    }
+    public static int repeatdivide(int num,int i ){
+        int result=0;
+        if (canbedivide(num,i)){
+            result=repeatdivide(num/i,i);
+        }else{
+            return num;
+        }
+        return result;
+    }
 }
