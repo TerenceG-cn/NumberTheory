@@ -7,28 +7,37 @@ import java.util.Scanner;
 public class eularfunc {
     public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
-        int num=scanner.nextInt();
-        int a=num;
-        double oulaAnwser=0;
-        ArrayList<Integer> oulaList = new ArrayList<Integer>();
-        if (isPrime(num)){
-            oulaAnwser=num-1;
-        }else{
-            List<Integer> allPrime = getAllPrime(num);
-            for(int i : allPrime){
-                int tem=num;
-                num=repeatdivide(num,i);
-                if (tem!=num){
-                    oulaList.add(i);
+        while(scanner.hasNext()) {
+        	int num=scanner.nextInt();
+            int a=num;
+            double oulaAnwser=0;
+            ArrayList<Integer> oulaList = new ArrayList<Integer>();
+            if (isPrime(num)){
+                oulaAnwser=num-1;
+            }else{
+                List<Integer> allPrime = getAllPrime(num);
+                for(int i : allPrime){
+                    int tem=num;
+                    num=repeatdivide(num,i);
+                    if (tem!=num){
+                        oulaList.add(i);//素因子列表
+                    }
+                }
+                oulaAnwser=a;
+                for (int j :oulaList){
+                     oulaAnwser=oulaAnwser*(1-(double)1/j);
                 }
             }
-            oulaAnwser=a;
-            for (int j :oulaList){
-                 oulaAnwser=oulaAnwser*(1-(double)1/j);
-            }
+            System.out.println("欧拉函数的值为"+Math.round(oulaAnwser));
         }
-        System.out.println("欧拉函数的值为"+Math.round(oulaAnwser));
+        
+        scanner.close();
     }
+    /**
+     * 小于num的所有素数
+     * @param num
+     * @return
+     */
     public static List<Integer> getAllPrime(int num){
         ArrayList<Integer> result = new ArrayList<Integer>();
         for (int i =2;i<num;i++){
