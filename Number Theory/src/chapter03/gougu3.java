@@ -1,4 +1,4 @@
-package chapter3;
+package chapter03;
 //3.1 (c) 
 public class gougu3 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package chapter7;
+package chapter07;
 //分解正整数为素数乘积
 public class xiti7_7 {
 	public static void main(String[] args) {

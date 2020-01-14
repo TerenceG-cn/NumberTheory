@@ -1,7 +1,7 @@
-package chapter8;
+package chapter08;
 
-import chapter5.GCD_LCM;
-import chapter6.xiti6_3;
+import chapter05.GCD_LCM;
+import chapter06.xiti6_3;
 
 //解同余式方程
 public class xiti8_7 {

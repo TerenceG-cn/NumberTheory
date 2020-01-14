@@ -2,7 +2,7 @@ package chapter10;
 
 import java.util.Scanner;
 
-import chapter8.xiti8_7;
+import chapter08.xiti8_7;
 
 public class CongruenceSystem {
 

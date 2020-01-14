@@ -1,4 +1,4 @@
-package chapter5;
+package chapter05;
 //欧几里得算法
 public class GCD_LCM{
 	public static long gcd(long n1,long n2) {
@@ -26,6 +26,8 @@ public class GCD_LCM{
 //				if(gcd(i, j)==18&&i*j==720*18)
 //					System.out.println(""+i+", "+j);
 		System.out.println(gcd(9048, 1645));
+		System.out.println(gcd(1338, 1115));
+		System.out.println(gcd(1438, 1115));
 	}
 }
 

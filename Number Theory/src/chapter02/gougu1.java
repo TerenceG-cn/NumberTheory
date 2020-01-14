@@ -1,4 +1,4 @@
-package chapter2;
+package chapter02;
 //找到一组有相同c值的本原勾股数组
 public class gougu1 {
 

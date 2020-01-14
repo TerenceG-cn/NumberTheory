@@ -1,4 +1,4 @@
-package chapter8;
+package chapter08;
 
 public class xiti8_8 {
 	static double f(int x) {

@@ -1,4 +1,4 @@
-package chapter2;
+package chapter02;
 //b值为2700的勾股数组
 public class gougu2 {
 	public static void main(String[] args) {

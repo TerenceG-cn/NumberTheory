@@ -1,4 +1,4 @@
-package chapter9;
+package chapter09;
 
 public class xiti9_1 {
 	public static void main(String[] args) {

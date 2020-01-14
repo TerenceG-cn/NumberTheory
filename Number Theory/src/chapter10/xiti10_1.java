@@ -1,6 +1,6 @@
 package chapter10;
 
-import chapter5.GCD_LCM;
+import chapter05.GCD_LCM;
 
 public class xiti10_1 {
 

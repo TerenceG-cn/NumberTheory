@@ -1,4 +1,4 @@
-package chapter6;
+package chapter06;
 
 //解ax+by=gcd(a,b)的有效算法 
 public class xiti6_3 {

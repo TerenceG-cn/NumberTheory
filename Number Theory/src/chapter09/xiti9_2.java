@@ -1,7 +1,7 @@
-package chapter9;
+package chapter09;
 
 
-import chapter8.xiti8_7;
+import chapter08.xiti8_7;
 
 public class xiti9_2 {
 
