@@ -3,8 +3,8 @@ package chapter15;
 import static chapter15.xiti15_7.funs;
 
 public class xiti15_10 {
-	public static boolean funK(int n, int k) {
-		int a = n;
+	public static boolean funK(long n, int k) {
+		long a = n;
 		for (int i = 0; i < k; i++) {
 			a = funs(a);
 		}
@@ -19,21 +19,19 @@ public class xiti15_10 {
 //			if(funK(i,5)&&i!=funs(i))
 //				System.out.println(i);
 //		}
-		
-		for (int i = 18000000; i < 20101000; i++) {
-			if (funK(i, 4) && i != funs(i) && i != funs(funs(i)))//效率太低了
-				System.out.println(i);
-		}
+		/*
+		 * System.out.println(funK(18048976, 4)); System.out.println(funK(20100368, 4));
+		 * System.out.println(funK(18914992, 4)); System.out.println(funK(19252208, 4));
+		 * 
+		 * System.out.println(funK(18656380, 4)); System.out.println(funK(20522060, 4));
+		 * System.out.println(funK(28630036, 4)); System.out.println(funK(24289964, 4));
+		 */
+//		System.out.println(funs(29902635));//30853845 ?未确认
+//		System.out.println(funs(30853845));//29971755
+//		System.out.println(funs(29971755));//28158165
+//		System.out.println(funs(28158165));//29902635
 
-		System.out.println(funK(18048976, 4));
-		System.out.println(funK(20100368, 4));
-		System.out.println(funK(18914992, 4));
-		System.out.println(funK(19252208, 4));
-		
-		System.out.println(funK(18656380, 4));
-		System.out.println(funK(20522060, 4));
-		System.out.println(funK(28630036, 4));
-		System.out.println(funK(24289964, 4));
 
+		
 	}
 }

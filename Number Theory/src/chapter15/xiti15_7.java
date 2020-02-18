@@ -20,17 +20,17 @@ public class xiti15_7 {
 	 * @param k 蹶棒
 	 * @return 考硉
 	 */
-	public static int fun考WithPrime(int p, int k) {
-		return (int) ((Math.pow(p, k + 1) - 1) / (p - 1));
+	public static long fun考WithPrime(long p, int k) {
+		return (long) ((Math.pow(p, k + 1) - 1) / (p - 1));
 	}
 
-	public static int fun考(int n) {
+	public static long fun考(long n) {
 		if (n < 1)
 			return 0;
-		Map<Integer, Integer> factors = PrimeFactors.calc(n);
-		int result = 1;
+		Map<Long, Integer> factors = PrimeFactors.calc3(n);
+		long result = 1l;
 
-		for (Entry<Integer, Integer> f : factors.entrySet()) {
+		for (Entry<Long, Integer> f : factors.entrySet()) {
 			result *= fun考WithPrime(f.getKey(), f.getValue());
 		}
 
@@ -43,7 +43,7 @@ public class xiti15_7 {
 	 * @param n
 	 * @return
 	 */
-	public static int funs(int n) {
+	public static long funs(long n) {
 		return fun考(n) - n;
 	}
 
@@ -68,5 +68,8 @@ public class xiti15_7 {
 		System.out.println(funs(20100368));
 		System.out.println(funs(18914992));
 		System.out.println(funs(19252208));
+		
+		
+		
 	}
 }

@@ -1,10 +1,7 @@
 package utils;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 
 /**
  * 将任意自然数分解为质数的乘积
@@ -13,7 +10,7 @@ import java.util.Scanner;
  *
  */
 public class PrimeFactors {
-	public static Map<Integer, Integer> calc(int number) {
+	public static Map<Integer, Integer> calc1(int number) {
 		Map<Integer, Integer> factors = new HashMap();
 
 		if (number >= 2) {
@@ -40,35 +37,59 @@ public class PrimeFactors {
 	}
 
 	/* 内层循环 */
-	public static List<Integer> calc2(int number) {
-		List<Integer> factors = new ArrayList<>();
+	public static Map<Long, Integer> calc2(long number) {
+		Map<Long, Integer> factors = new HashMap<Long, Integer>();
 
 		if (number >= 2) {
-			for (int factor = 2; factor < number; factor++) {
+			for (long factor = 2; factor < number; factor++) {
 				while (number % factor == 0 && number > factor) {
-					factors.add(factor);
+					if (factors.containsKey(factor)) {// factors.add(factor);
+						factors.put(factor, factors.get(factor) + 1);
+					} else {
+						factors.put(factor, 1);
+					}
 					number = number / factor;
 				}
 			}
-			factors.add(number);
+			if (factors.containsKey(number)) {// factors.add(factor);
+				factors.put(number, factors.get(number) + 1);
+			} else {
+				factors.put(number, 1);
+			}
 		}
 
 		return factors;
 	}
 
+	public static Map<Long, Integer> calc3(long num) {// xxxxxxxxxxxxxx
+		Map<Long, Integer> factors = new HashMap();
+		for (long i = 2; i <= Math.sqrt(num); i++) {
+			if (num % i == 0) {
+				if (factors.containsKey(i)) {// factors.add(factor);
+					factors.put(i, factors.get(i) + 1);
+				} else {
+					factors.put(i, 1);
+				}
+				num /= i;
+				i--;
+			}
+		}
+		if (factors.containsKey(num)) {// factors.add(factor);
+			factors.put(num, factors.get(num) + 1);
+		} else {
+			factors.put(num, 1);
+		}
+		return factors;
+	}
+
 	public static void main(String[] args) {
 
-		for (int i = 99990; i <= 100000000; i++) {
-			System.out.println(i + ": " + PrimeFactors.calc(i));
+		long startTime = System.currentTimeMillis() / 1000;
+		for (int i = 10; i <= 100000; i++) {
+			System.out.println(i + ": " + PrimeFactors.calc2(i));
 		}
-		/*
-		 * Scanner in = new Scanner(System.in); System.out.println("输入一个数："); long
-		 * number = in.nextLong(); System.out.print(number + "="); int i = 1; while (i <
-		 * number) { if (number % i == 0 && i == 1) { System.out.print(i + "x"); number
-		 * /= i;
-		 * 
-		 * } else if (number % i == 0 && i != 1) { System.out.print(i + "x"); number /=
-		 * i; continue; } i++; } System.out.print(i);
-		 */
+		long endTime = System.currentTimeMillis() / 1000;
+		System.out.println("总耗时：" + (endTime - startTime));
+
 	}
 }
