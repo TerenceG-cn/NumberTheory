@@ -91,6 +91,11 @@ public class PrimeFactors {
 //		long endTime = System.currentTimeMillis() / 1000;
 //		System.out.println("×ÜºÄÊ±£º" + (endTime - startTime));
 
-		System.out.println(PrimeFactors.calc3(9999973));
+//		System.out.println(PrimeFactors.calc3(9999973));
+//		System.out.println(PrimeFactors.calc3(9991));
+		long startTime = System.currentTimeMillis();
+		System.out.println(PrimeFactors.calc3(200000000235L));
+		long endTime = System.currentTimeMillis();
+		System.out.println(endTime-startTime+"ms");
 	}
 }

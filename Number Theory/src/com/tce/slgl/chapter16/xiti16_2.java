@@ -32,8 +32,12 @@ public class xiti16_2 {
 //		System.out.println(funaKm(567, 1234, 4321));//3214
 //		System.out.println(funaKm(47, 258008, 1315171));//1296608
 		
-		/*16.3*/
+		/*16.3
 		System.out.println(funaKm(7, 7386, 7387));//702,7387不是素数
-		System.out.println(funaKm(47, 7392, 7393));//1,7393可能是素数(实际上7393是一个素数)
+		System.out.println(funaKm(7, 7392, 7393));//1,7393可能是素数(实际上7393是一个素数)
+		*/
+		
+		/*16.5*/
+		System.out.println(funaKm(2, 9990, 9991));
 	}
 }
