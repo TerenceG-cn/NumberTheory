@@ -7,7 +7,7 @@ import com.tce.slgl.chapter06.xiti6_3;
 public class xiti8_7 {
 	public static long congruence(long a, long c, long m) {
 		long g = GCD_LCM.gcd(a, m);
-		long u0 = xiti6_3.fun(a, 0 - m);
+		long u0 = xiti6_3.fun(a, 0 - m)[0];
 		long xk=0;
 		
 		if (c % g != 0) {

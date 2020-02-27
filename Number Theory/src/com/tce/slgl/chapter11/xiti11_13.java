@@ -1,4 +1,4 @@
-package com.tce.slgl.chapter10;
+package com.tce.slgl.chapter11;
 
 /**
  * 求高次幂的末尾数字，4位
