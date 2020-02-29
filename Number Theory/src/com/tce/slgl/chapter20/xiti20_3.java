@@ -20,4 +20,9 @@ public class xiti20_3 {
 		System.out.println(tryMod(24, qr3));//11,1
 		System.out.println(tryMod(24, nr3));//5,7
 	}
+	/**
+	 * 结论是
+	 * 对于满足模12余11或1的奇素数p，3是模p的二次剩余；
+	 * 对于满足模12余7或5的奇素数p，3是模p的二次非剩余；
+	 */
 }
