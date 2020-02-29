@@ -2,8 +2,12 @@ package com.tce.slgl.chapter20;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class 模P平方剩余 {
+/**
+ * 模P平方剩余
+ * @author 10352
+ *
+ */
+public class ModPsqar{
 	public static List<Long> getP2(long p) {
 		List<Long> res = new ArrayList<Long>();
 		for (long i = 0; i < p; i++) {
