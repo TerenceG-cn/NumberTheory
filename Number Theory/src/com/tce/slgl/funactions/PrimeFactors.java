@@ -93,9 +93,12 @@ public class PrimeFactors {
 
 //		System.out.println(PrimeFactors.calc3(9999973));
 //		System.out.println(PrimeFactors.calc3(9991));
-		long startTime = System.currentTimeMillis();
-		System.out.println(PrimeFactors.calc3(200000000235L));
-		long endTime = System.currentTimeMillis();
-		System.out.println(endTime-startTime+"ms");
+//		long startTime = System.currentTimeMillis();
+//		System.out.println(PrimeFactors.calc3(200000000235L));
+//		long endTime = System.currentTimeMillis();
+//		System.out.println(endTime-startTime+"ms");
+		
+		System.out.println(PrimeFactors.calc3(148997));
+		System.out.println(PrimeFactors.calc3((long) (4*Math.pow(148997, 2)+1)));
 	}
 }
