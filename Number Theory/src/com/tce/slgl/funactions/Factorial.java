@@ -1,6 +1,6 @@
 package com.tce.slgl.funactions;
 
-public class factorial {
+public class Factorial {
 	/**
 	 * ÇóÊýxµÄ½×³Ë
 	 * @param x

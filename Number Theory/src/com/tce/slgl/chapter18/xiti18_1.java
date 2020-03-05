@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class xiti18_1 {
+	/*¼òµ¥¹«Ô¿¼ÓÃÜ*/
 	public static long[] simplePki_encryption(long m, long k, long[] encryContent) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < encryContent.length; i++)
 			sb.append(encryContent[i]);
 		System.out.println(convert(sb.toString()));
+		//to do
 		return new long[10];
 	}
 
@@ -31,6 +33,8 @@ public class xiti18_1 {
 
 	public static void main(String[] args) {
 		long[] content = { 5192, 2604, 422 };
-		simplePki_encryption(7081, 2604, content);
+		long[] miwen=simplePki_encryption(7081, 1789, content);
+		for(int i=0;i<miwen.length;i++)
+			System.out.print(miwen[i]);
 	}
 }
