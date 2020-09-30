@@ -2,8 +2,8 @@ package com.tce.slgl.chapter05;
 //欧几里得算法
 public class GCD_LCM{
 	public static long gcd(long n1,long n2) {
-		long a=n1>n2?n1:n2;
-		long b=n1>n2?n2:n1;
+		long a= Math.max(n1, n2);
+		long b= Math.min(n1, n2);
 		if(a==0||b==0) return 0;
 		while(b!=0) {
 			long c=a%b;
