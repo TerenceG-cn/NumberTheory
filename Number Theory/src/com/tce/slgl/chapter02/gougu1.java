@@ -1,5 +1,5 @@
 package com.tce.slgl.chapter02;
-//找到一组有相同c值的本原勾股数组
+//鎵惧埌涓�缁勬湁鐩稿悓c鍊肩殑鏈師鍕捐偂鏁扮粍
 public class gougu1 {
 
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 package com.tce.slgl.chapter02;
-//bÖµÎª2700µÄ¹´¹ÉÊý×é
+//bå€¼ä¸º2700çš„å‹¾è‚¡æ•°ç»„
 public class gougu2 {
 	public static void main(String[] args) {
 		for(int i=1;i<10000;i++)

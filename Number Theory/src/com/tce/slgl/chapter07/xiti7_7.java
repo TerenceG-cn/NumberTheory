@@ -1,5 +1,5 @@
 package com.tce.slgl.chapter07;
-//分解正整数为素数乘积
+//鍒嗚В姝ｆ暣鏁颁负绱犳暟涔樼Н
 public class xiti7_7 {
 	public static void main(String[] args) {
 //		for(int i=1000000;i<1000031;i++) {

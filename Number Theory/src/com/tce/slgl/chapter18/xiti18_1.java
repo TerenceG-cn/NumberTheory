@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class xiti18_1 {
-	/*¼òµ¥¹«Ô¿¼ÓÃÜ*/
+	/*ç®€å•å…¬é’¥åŠ å¯†*/
 	public static long[] simplePki_encryption(long m, long k, long[] encryContent) {
 		StringBuilder sb = new StringBuilder();
 		for (int i = 0; i < encryContent.length; i++)
@@ -20,7 +20,7 @@ public class xiti18_1 {
 		List<String> res = new ArrayList<String>();
 		for (int i = 0; i < str.length(); i++) {
 			if (i % 3 == 0) {
-				// ·ÀÔ½½ç&±£Áô×î¸ßÎ»
+				// é˜²è¶Šç•Œ&ä¿ç•™æœ€é«˜ä½
 				if (i + 3 > str.length()) {
 					res.add(str.substring(i));// res.add(Long.parseLong(str.substring(i)));
 					break;

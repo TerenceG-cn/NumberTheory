@@ -16,7 +16,7 @@ public class ThreeNplusOne {
 				//System.out.print(" "+n);
 				count++;
 			}
-			System.out.println("\tËã·¨³¤¶È£º" + count);
+			System.out.println("\tç®—æ³•é•¿åº¦ï¼š" + count);
 		}
 	}
 }

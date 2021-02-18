@@ -1,5 +1,5 @@
 package com.tce.slgl.chapter05;
-//Å·¼¸ÀïµÃËã·¨
+//æ¬§å‡ é‡Œå¾—ç®—æ³•
 public class GCD_LCM{
 	public static long gcd(long n1,long n2) {
 		long a= Math.max(n1, n2);
@@ -31,4 +31,4 @@ public class GCD_LCM{
 	}
 }
 
-//Å·¼¸ÀïµÃËã·¨ÖÁ¶àÔÚ2log2(b)²½½áÊø£¬²½ÊıÖÁ¶àÊÇbÎ»ÊıµÄ7±¶
+//æ¬§å‡ é‡Œå¾—ç®—æ³•è‡³å¤šåœ¨2log2(b)æ­¥ç»“æŸï¼Œæ­¥æ•°è‡³å¤šæ˜¯bä½æ•°çš„7å€

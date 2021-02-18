@@ -1,6 +1,6 @@
 package com.tce.slgl.chapter06;
 
-//½âax+by=gcd(a,b)µÄÓÐÐ§Ëã·¨ 
+//è§£ax+by=gcd(a,b)çš„æœ‰æ•ˆç®—æ³• 
 public class xiti6_3 {
 	public static long[] fun(long a, long b) {
 		long x = 1, g = a, v = 0, w = b, y, s, t, q;
