@@ -20,7 +20,7 @@ public class eularfunc {
                     int tem=num;
                     num=repeatdivide(num,i);
                     if (tem!=num){
-                        oulaList.add(i);//ËØÒò×ÓÁĞ±í
+                        oulaList.add(i);//ç´ å› å­åˆ—è¡¨
                     }
                 }
                 oulaAnwser=a;
@@ -28,13 +28,13 @@ public class eularfunc {
                      oulaAnwser=oulaAnwser*(1-(double)1/j);
                 }
             }
-            System.out.println("Å·À­º¯ÊıµÄÖµÎª"+Math.round(oulaAnwser));
+            System.out.println("æ¬§æ‹‰å‡½æ•°çš„å€¼ä¸º"+Math.round(oulaAnwser));
         }
         
         scanner.close();
     }
     /**
-     * Ğ¡ÓÚnumµÄËùÓĞËØÊı
+     * å°äºnumçš„æ‰€æœ‰ç´ æ•°
      * @param num
      * @return
      */

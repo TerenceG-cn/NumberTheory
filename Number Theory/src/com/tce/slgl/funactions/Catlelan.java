@@ -1,17 +1,17 @@
 package com.tce.slgl.funactions;
-//¿¨ÌØÀ¼ÊıµİÍÆ¹«Ê½h(n)=h(n-1)*(4*n-2)/(n+1);
+//å¡ç‰¹å…°æ•°é€’æ¨å…¬å¼h(n)=h(n-1)*(4*n-2)/(n+1);
 import java.math.*;
 import java.util.*;
 public class Catlelan {
 	
   
   public static void main(String[] args) {
-      Scanner cin = new Scanner(System.in);//ĞèÒªµÚ¼¸¸ö¿¨ÌØÀ¼Êı
-      BigInteger dp[];//¶¨ÒåÒ»¸öÊı×é
-      dp=new BigInteger[1000];//¹æ¶¨Êı×éµÄ´óĞ¡
+      Scanner cin = new Scanner(System.in);//éœ€è¦ç¬¬å‡ ä¸ªå¡ç‰¹å…°æ•°
+      BigInteger dp[];//å®šä¹‰ä¸€ä¸ªæ•°ç»„
+      dp=new BigInteger[1000];//è§„å®šæ•°ç»„çš„å¤§å°
       dp[1]=BigInteger.valueOf(1);
       int i,m;
-      for(i=2;i<1000;i++)//¿¨ÌØÀ¼Êı´ò±í
+      for(i=2;i<1000;i++)//å¡ç‰¹å…°æ•°æ‰“è¡¨
       {
           dp[i]=dp[i-1].multiply(BigInteger.valueOf(4*i-2)).divide(BigInteger.valueOf(i+1));  
       }

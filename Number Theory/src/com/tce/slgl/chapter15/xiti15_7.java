@@ -6,63 +6,63 @@ import java.util.Map.Entry;
 import com.tce.slgl.funactions.PrimeFactors;
 
 /**
- * ±àĞ´³ÌĞò¼ÆËã¦Ò(n)£¬¦Ò(n)ÊÇnµÄËùÓĞÒòÊıÖ®ºÍ 1.½«n·Ö½âÎªËØÊı³Ë»ı 2.ÀûÓÃ¦Ò(n)Á½¸öĞÔÖÊ
+ * ç¼–å†™ç¨‹åºè®¡ç®—Ïƒ(n)ï¼ŒÏƒ(n)æ˜¯nçš„æ‰€æœ‰å› æ•°ä¹‹å’Œ 1.å°†nåˆ†è§£ä¸ºç´ æ•°ä¹˜ç§¯ 2.åˆ©ç”¨Ïƒ(n)ä¸¤ä¸ªæ€§è´¨
  * 
  * @author 10352
  *
  */
 public class xiti15_7 {
 	/**
-	 * ËØÊıÃİ´ÎµÄ¦ÒÖµ
+	 * ç´ æ•°å¹‚æ¬¡çš„Ïƒå€¼
 	 * 
-	 * @param p ËØÊı
-	 * @param k Ãİ´Î
-	 * @return ¦ÒÖµ
+	 * @param p ç´ æ•°
+	 * @param k å¹‚æ¬¡
+	 * @return Ïƒå€¼
 	 */
-	public static long fun¦ÒWithPrime(long p, int k) {
+	public static long funÏƒWithPrime(long p, int k) {
 		return (long) ((Math.pow(p, k + 1) - 1) / (p - 1));
 	}
 
-	public static long fun¦Ò(long n) {
+	public static long funÏƒ(long n) {
 		if (n < 1)
 			return 0;
 		Map<Long, Integer> factors = PrimeFactors.calc3(n);
 		long result = 1l;
 
 		for (Entry<Long, Integer> f : factors.entrySet()) {
-			result *= fun¦ÒWithPrime(f.getKey(), f.getValue());
+			result *= funÏƒWithPrime(f.getKey(), f.getValue());
 		}
 
 		return result;
 	}
 
 	/**
-	 * s(n) = ¦Ò(n)-n
+	 * s(n) = Ïƒ(n)-n
 	 * 
 	 * @param n
 	 * @return
 	 */
 	public static long funs(long n) {
-		return fun¦Ò(n) - n;
+		return funÏƒ(n) - n;
 	}
 
 	public static void main(String[] args) {
 //		int bz = 0, wq = 0, gs = 0;
 //		for (int i = 2; i < 101; i++) {
-//			int ¦ÒN = fun¦Ò(i);
-//			System.out.print("¦Ò(" + i + ") = " + ¦ÒN + "\t");
-//			if (¦ÒN > 2 * i) {
-//				System.out.println(" " + i + "ÊÇ¹ıÊ£Êı");
+//			int ÏƒN = funÏƒ(i);
+//			System.out.print("Ïƒ(" + i + ") = " + ÏƒN + "\t");
+//			if (ÏƒN > 2 * i) {
+//				System.out.println(" " + i + "æ˜¯è¿‡å‰©æ•°");
 //				gs++;
-//			} else if (¦ÒN < 2 * i) {
-//				System.out.println(" " + i + "ÊÇ²»×ãÊı");
+//			} else if (ÏƒN < 2 * i) {
+//				System.out.println(" " + i + "æ˜¯ä¸è¶³æ•°");
 //				bz++;
 //			} else {
-//				System.out.println(" " + i + "ÊÇÍêÈ«Êı");
+//				System.out.println(" " + i + "æ˜¯å®Œå…¨æ•°");
 //				wq++;
 //			}
 //		}
-//		System.out.println("²»×ãÊı£º" + bz + "ÍêÈ«Êı£º" + wq + "¹ıÊ£Êı£º" + gs);
+//		System.out.println("ä¸è¶³æ•°ï¼š" + bz + "å®Œå…¨æ•°ï¼š" + wq + "è¿‡å‰©æ•°ï¼š" + gs);
 
 //		System.out.println(funs(18048976));
 //		System.out.println(funs(20100368));

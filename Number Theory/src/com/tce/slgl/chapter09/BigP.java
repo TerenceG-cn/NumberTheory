@@ -2,7 +2,7 @@ package com.tce.slgl.chapter09;
 
 import java.math.BigInteger;
 import java.util.Scanner;
-//´óËØÊıÅĞ¶¨ 
+//å¤§ç´ æ•°åˆ¤å®š 
 public class BigP {
 	public static void main(String args[]){  
         

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class TriangularNumbers {
-	// 找出小于n的三角数，n(n+1)/2
+	// 鎵惧嚭灏忎簬n鐨勪笁瑙掓暟锛宯(n+1)/2
 	public static List<Integer> findTriangularNumbers(int n) {
 		List<Integer> result = new LinkedList<Integer>();
 		int i, tri = 0;
@@ -20,7 +20,7 @@ public class TriangularNumbers {
 		List<Integer> a = findTriangularNumbers(10000);
 		int count = 0;
 		for (int i : a) {
-			// if(Math.sqrt(i)*10%10==0) { //判断是否是一个平方数
+			// if(Math.sqrt(i)*10%10==0) { //鍒ゆ柇鏄惁鏄竴涓钩鏂规暟
 			System.out.print(i + "\t");
 			if (count++ > 10) {
 				System.out.println();

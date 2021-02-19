@@ -2,7 +2,7 @@ package com.tce.slgl.funactions;
 
 public class Factorial {
 	/**
-	 * ÇóÊýxµÄ½×³Ë
+	 * æ±‚æ•°xçš„é˜¶ä¹˜
 	 * @param x
 	 * @return
 	 */

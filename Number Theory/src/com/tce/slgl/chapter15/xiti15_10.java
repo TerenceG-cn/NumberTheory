@@ -26,7 +26,7 @@ public class xiti15_10 {
 		 * System.out.println(funK(18656380, 4)); System.out.println(funK(20522060, 4));
 		 * System.out.println(funK(28630036, 4)); System.out.println(funK(24289964, 4));
 		 */
-//		System.out.println(funs(29902635));//30853845 ?δȷ��
+//		System.out.println(funs(29902635));//30853845 ?未确认
 //		System.out.println(funs(30853845));//29971755
 //		System.out.println(funs(29971755));//28158165
 //		System.out.println(funs(28158165));//29902635

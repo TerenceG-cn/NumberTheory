@@ -28,12 +28,12 @@ public class Mltfun {
 			ExecutorService exec = Executors.newCachedThreadPool();
 			long startTime = System.currentTimeMillis() / 1000;
 			for (int i = 0; i < threadNum; i++) {
-				System.out.println("thread" + i + "¿ªÊ¼ÔËÐÐ£¡");
-				exec.execute(new Fun¦ÒTask(startN[i], endN[i], latch));
+				System.out.println("thread" + i + "å¼€å§‹è¿è¡Œï¼");
+				exec.execute(new FunÏƒTask(startN[i], endN[i], latch));
 			}
 			latch.await();
 			long endTime = System.currentTimeMillis() / 1000;
-			System.out.println("ÔËÐÐÊ±¼ä£º" + (endTime - startTime) + " s");//805984760  ÔËÐÐÊ±¼ä£º66321 s
+			System.out.println("è¿è¡Œæ—¶é—´ï¼š" + (endTime - startTime) + " s");//805984760  è¿è¡Œæ—¶é—´ï¼š66321 s
 			exec.shutdown();
 		} catch (InterruptedException e) {
 			e.printStackTrace();

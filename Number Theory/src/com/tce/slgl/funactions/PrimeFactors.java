@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ½«ÈÎÒâ×ÔÈ»Êı·Ö½âÎªÖÊÊıµÄ³Ë»ı
+ * å°†ä»»æ„è‡ªç„¶æ•°åˆ†è§£ä¸ºè´¨æ•°çš„ä¹˜ç§¯
  * 
  * @author 10352
  *
@@ -36,7 +36,7 @@ public class PrimeFactors {
 		return factors;
 	}
 
-	/* ÄÚ²ãÑ­»· */
+	/* å†…å±‚å¾ªç¯ */
 	public static Map<Long, Integer> calc2(long number) {
 		Map<Long, Integer> factors = new HashMap<Long, Integer>();
 
@@ -89,7 +89,7 @@ public class PrimeFactors {
 //			System.out.println(i + ": " + PrimeFactors.calc2(i));
 //		}
 //		long endTime = System.currentTimeMillis() / 1000;
-//		System.out.println("×ÜºÄÊ±£º" + (endTime - startTime));
+//		System.out.println("æ€»è€—æ—¶ï¼š" + (endTime - startTime));
 
 //		System.out.println(PrimeFactors.calc3(9999973));
 //		System.out.println(PrimeFactors.calc3(9991));

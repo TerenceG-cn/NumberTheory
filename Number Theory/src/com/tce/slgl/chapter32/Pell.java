@@ -9,7 +9,7 @@ import static javafx.scene.input.KeyCode.K;
 
 public class Pell {
     /**
-     * Á¬·ÖÊıÇó½âpell·½³Ì ×îĞ¡ÕûÊı½â
+     * è¿åˆ†æ•°æ±‚è§£pellæ–¹ç¨‹ æœ€å°æ•´æ•°è§£
      *
      * @param d x^2-dy^2=1
      * @return
@@ -42,7 +42,7 @@ public class Pell {
     }
 
     public static void pellForAll(int d){
-        Map<Integer,Integer> map=pell(d);//µÃµ½×îĞ¡ÕûÊı½âx0£¬y0
+        Map<Integer,Integer> map=pell(d);//å¾—åˆ°æœ€å°æ•´æ•°è§£x0ï¼Œy0
         if(map.size()>1) return;//todo
         int x0=0,y0=0;
         for(Map.Entry<Integer,Integer> entry:map.entrySet()){
@@ -53,7 +53,7 @@ public class Pell {
             }
         }
         System.out.println("(x0,y0):"+"("+x0+","+y0+")");
-        //µİÍÆ¹«Ê½ xk+1=x0*xk+d*y0*yk; yk+1=y0*xk+x0*yk;
+        //é€’æ¨å…¬å¼ xk+1=x0*xk+d*y0*yk; yk+1=y0*xk+x0*yk;
         int k=1,xk=x0,yk=y0;
         int x=xk,y=yk;
         while(true){
@@ -68,8 +68,8 @@ public class Pell {
 
 
     public static void main(String[] args) {
-        //System.out.println(pell(41));//Á¬·ÖÊı 6£¬2£¬2£¬12
-        //System.out.println(pell(22));//4£¬1£¬2£¬4£¬2£¬1£¬8
+        //System.out.println(pell(41));//è¿åˆ†æ•° 6ï¼Œ2ï¼Œ2ï¼Œ12
+        //System.out.println(pell(22));//4ï¼Œ1ï¼Œ2ï¼Œ4ï¼Œ2ï¼Œ1ï¼Œ8
         pellForAll(11);
     }
 

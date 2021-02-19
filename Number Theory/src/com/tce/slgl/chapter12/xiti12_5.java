@@ -1,7 +1,7 @@
 package com.tce.slgl.chapter12;
 
 public class xiti12_5 {
-	/* ÇónµÄ½×³Ë */
+	/* æ±‚nçš„é˜¶ä¹˜ */
 	public static long clac(int n) {
 		if (n == 1) {
 			return 1;
@@ -10,7 +10,7 @@ public class xiti12_5 {
 		}
 	}
 
-	/* Çó2µÄk´ÎÃÝ */
+	/* æ±‚2çš„kæ¬¡å¹‚ */
 	public static long powerTwo(int k) {
 		if (k == 0) {
 			return 1;
@@ -19,7 +19,7 @@ public class xiti12_5 {
 		}
 	}
 
-	/* ÇónµÄk´ÎÃÝ */
+	/* æ±‚nçš„kæ¬¡å¹‚ */
 	public static long powerN(int n, int k) {
 		if (k == 0) {
 			return 1;
@@ -29,7 +29,7 @@ public class xiti12_5 {
 		}
 	}
 
-	/* ÇóÕû³ýnµÄ½×³ËµÄ2µÄ×î¸ßÃÝ´Î */
+	/* æ±‚æ•´é™¤nçš„é˜¶ä¹˜çš„2çš„æœ€é«˜å¹‚æ¬¡ */
 	public static int fun1(int n) {
 		long clac = clac(n);
 		// System.out.println(clac);
@@ -51,7 +51,7 @@ public class xiti12_5 {
 		}
 	}
 
-	/* ÇóÕû³ýnµÄ½×³ËµÄ3µÄ×î¸ßÃÝ´Î */
+	/* æ±‚æ•´é™¤nçš„é˜¶ä¹˜çš„3çš„æœ€é«˜å¹‚æ¬¡ */
 	public static int fun3(int n) {
 		long clac = clac(n);
 		int k = 0, res = 0;
@@ -72,7 +72,7 @@ public class xiti12_5 {
 		}
 	}
 
-	/* ÇóÕû³ýnµÄ½×³ËµÄpµÄ×î¸ßÃÝ´Î */
+	/* æ±‚æ•´é™¤nçš„é˜¶ä¹˜çš„pçš„æœ€é«˜å¹‚æ¬¡ */
 	public static int fun(int n, int p) {
 		if (n < p)
 			return 0;

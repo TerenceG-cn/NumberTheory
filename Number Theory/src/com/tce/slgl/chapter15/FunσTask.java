@@ -5,12 +5,12 @@ import static com.tce.slgl.chapter15.xiti15_7.funs;
 
 import java.util.concurrent.CountDownLatch;;
 
-public class Fun¶“Task implements Runnable {
+public class FunœÉTask implements Runnable {
 	private long start;
 	private long end;
 	private CountDownLatch latch;
 
-	public Fun¶“Task(long start, long end, CountDownLatch latch) {
+	public FunœÉTask(long start, long end, CountDownLatch latch) {
 		this.start = start;
 		this.end = end;
 		this.latch = latch;

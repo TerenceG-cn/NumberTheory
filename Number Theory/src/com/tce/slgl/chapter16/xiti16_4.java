@@ -6,11 +6,11 @@ import com.tce.slgl.funactions.PrimeFactors;
 
 public class xiti16_4 {
 	/**
-	 * ´óËØÊı¼ì²â
-	 * Ë¼Â·£º
-	 * Ñ¡È¡2µ½n-1Ö®¼äµÄËæ»ú10¸öÊıai
-	 * ÅĞ¶Ï aiµÄn-1´Î·½Ä£n µÈÓÚ 1£¿£¨ÓÉ·ÑÂíĞ¡¶¨ÀíµÃ nÊÇÖÊÊıÒ»¶¨ÊÇËØÊı£¬·´Ö®²»³ÉÁ¢£¬ÓĞ·´Àı¿¨Ã×Ğª¶ûÊı£©
-	 * ÔÙÀûÓÃËØÒòÊı·Ö½â½øÒ»²½ÅĞ¶Ï
+	 * å¤§ç´ æ•°æ£€æµ‹
+	 * æ€è·¯ï¼š
+	 * é€‰å–2åˆ°n-1ä¹‹é—´çš„éšæœº10ä¸ªæ•°ai
+	 * åˆ¤æ–­ aiçš„n-1æ¬¡æ–¹æ¨¡n ç­‰äº 1ï¼Ÿï¼ˆç”±è´¹é©¬å°å®šç†å¾— næ˜¯è´¨æ•°ä¸€å®šæ˜¯ç´ æ•°ï¼Œåä¹‹ä¸æˆç«‹ï¼Œæœ‰åä¾‹å¡ç±³æ­‡å°”æ•°ï¼‰
+	 * å†åˆ©ç”¨ç´ å› æ•°åˆ†è§£è¿›ä¸€æ­¥åˆ¤æ–­
 	 * @param num
 	 * @return
 	 */
@@ -18,17 +18,17 @@ public class xiti16_4 {
 		Random random=new Random();
 		long[] randomArray=new long[100];
 		for(int i=0;i<randomArray.length;i++) {
-			randomArray[i]=Math.abs(random.nextLong())%(num-1)+1L;//Ñ¡È¡2Óën-1Ö®¼äµÄ10¸öËæ»úÊı
+			randomArray[i]=Math.abs(random.nextLong())%(num-1)+1L;//é€‰å–2ä¸n-1ä¹‹é—´çš„10ä¸ªéšæœºæ•°
 		}
 		for(int j=0;j<randomArray.length;j++) {
 			if(xiti16_2.funaKm(randomArray[j], num-1, num)!=1) {
-				//System.out.println(num+"ÊÇºÏÊı£¡");
+				//System.out.println(num+"æ˜¯åˆæ•°ï¼");
 				return false;
 			}
 		}
-		//System.out.println(num+"¿ÉÄÜÊÇËØÊı¡£");
+		//System.out.println(num+"å¯èƒ½æ˜¯ç´ æ•°ã€‚");
 		if(PrimeFactors.calc3(num).containsKey(num)) {
-			System.out.println(num+"ÊÇËØÊı£¡");
+			System.out.println(num+"æ˜¯ç´ æ•°ï¼");
 			return true;
 		}
 		return false;

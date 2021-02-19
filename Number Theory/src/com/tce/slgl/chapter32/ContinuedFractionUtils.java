@@ -5,25 +5,25 @@ import java.util.List;
 import java.util.Vector;
 
 /**
- * Á¬·ÖÊı¹¤¾ßÀà
+ * è¿åˆ†æ•°å·¥å…·ç±»
  */
 public class ContinuedFractionUtils {
     /**
-     * Çó·ÇÆ½·½ÊıÆ½·½¸ùµÄÁ¬·ÖÊı±íÊ¾
-     * 1.·ÇÆ½·½ÊıÆ½·½¸ùÒ»¶¨¿ÉÒÔ±íÊ¾Îªa0+Ñ­»·Á¬·ÖÊıµÄĞÎÊ½
-     * ĞÎÈç¡¾a0£»a1£¬a2£¬...,an¡¿£¬nÎªÑ­»·½Ú³¤¶È
-     * »¹ÓĞ¸öÖØÒªµÄÌØµã£ºÕâ¸öÑ­»·½ÚÒ»¶¨ÊÇ a1 ¿ªÊ¼£¬ÇÒ×îºóÒ»¸öÊı an Ò»¶¨ÊÇ a0 µÄ2±¶¡£todo ¿ÉÒÔ½øÒ»²½¸Ä½øÁË
+     * æ±‚éå¹³æ–¹æ•°å¹³æ–¹æ ¹çš„è¿åˆ†æ•°è¡¨ç¤º
+     * 1.éå¹³æ–¹æ•°å¹³æ–¹æ ¹ä¸€å®šå¯ä»¥è¡¨ç¤ºä¸ºa0+å¾ªç¯è¿åˆ†æ•°çš„å½¢å¼
+     * å½¢å¦‚ã€a0ï¼›a1ï¼Œa2ï¼Œ...,anã€‘ï¼Œnä¸ºå¾ªç¯èŠ‚é•¿åº¦
+     * è¿˜æœ‰ä¸ªé‡è¦çš„ç‰¹ç‚¹ï¼šè¿™ä¸ªå¾ªç¯èŠ‚ä¸€å®šæ˜¯ a1 å¼€å§‹ï¼Œä¸”æœ€åä¸€ä¸ªæ•° an ä¸€å®šæ˜¯ a0 çš„2å€ã€‚todo å¯ä»¥è¿›ä¸€æ­¥æ”¹è¿›äº†
      */
     public static List<Integer> getCFbySR(int num){
         List<Integer> res=new ArrayList<>();
-        double r=Math.sqrt(num);//¿ª·½
-        int an=(int)Math.floor(r);//È¡Õû
+        double r=Math.sqrt(num);//å¼€æ–¹
+        int an=(int)Math.floor(r);//å–æ•´
         res.add(an);
 
         boolean flag=true;
         int count=0;
         while(flag){
-            r=Math.pow(r-an,-1);//È¡µ¹Êı
+            r=Math.pow(r-an,-1);//å–å€’æ•°
             an=(int)Math.floor(r);
             res.add(an);
             //System.out.println("r:"+r);
@@ -42,8 +42,8 @@ public class ContinuedFractionUtils {
             }
             //System.out.println("flag:"+flag);
         }
-        //É¾³ı¶àÓàµÄÔªËØ
-        int len=res.size()/2+1;//Ñ­»·½Ú³¤¶È+1£¨a0£©
+        //åˆ é™¤å¤šä½™çš„å…ƒç´ 
+        int len=res.size()/2+1;//å¾ªç¯èŠ‚é•¿åº¦+1ï¼ˆa0ï¼‰
         while(res.size()>len){
             res.remove(res.size()-1);
         }
@@ -51,7 +51,7 @@ public class ContinuedFractionUtils {
     }
 
     /**
-     * Á¬·ÖÊı¼Ó·¨
+     * è¿åˆ†æ•°åŠ æ³•
      * @param lmn  int[3]  l + m/n
      * @return
      */
@@ -65,8 +65,8 @@ public class ContinuedFractionUtils {
     }
 
     public static void main(String[] args){
-        List<Integer> res=getCFbySR(41);//41µÄÑ­»·½Ú2 2 12 £¬ÓĞµãÎÊÌâ todo
-                                            //Ğ¡¸Ä£¬¶ÔÓÚÑ­»·½ÚÊÇ1µÄÒªÁíÍâ¿¼ÂÇ
+        List<Integer> res=getCFbySR(41);//41çš„å¾ªç¯èŠ‚2 2 12 ï¼Œæœ‰ç‚¹é—®é¢˜ todo
+                                            //å°æ”¹ï¼Œå¯¹äºå¾ªç¯èŠ‚æ˜¯1çš„è¦å¦å¤–è€ƒè™‘
         for (Integer i:res
              ) {
             System.out.println(i);

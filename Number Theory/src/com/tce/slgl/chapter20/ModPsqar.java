@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Ä£PÆ½·½Ê£Óà
+ * æ¨¡På¹³æ–¹å‰©ä½™
  * 
  * @author 10352
  *
  */
 public class ModPsqar {
 	/**
-	 * ÇóÆæËØÊıµÄ¶ş´ÎÊ£Óà
+	 * æ±‚å¥‡ç´ æ•°çš„äºŒæ¬¡å‰©ä½™
 	 * 
 	 * @param p
 	 * @return
@@ -25,7 +25,7 @@ public class ModPsqar {
 	}
 
 	/**
-	 * ÇóÄ£pµÄËùÓĞÂú×ã1¡Üa<pµÄ¶ş´ÎÊ£ÓàaµÄºÍ A
+	 * æ±‚æ¨¡pçš„æ‰€æœ‰æ»¡è¶³1â‰¤a<pçš„äºŒæ¬¡å‰©ä½™açš„å’Œ A
 	 * 
 	 * @param p
 	 * @return
@@ -40,7 +40,7 @@ public class ModPsqar {
 	}
 
 	/**
-	 * ÇóÄ£pµÄËùÓĞÂú×ã1¡Üa<pµÄ¶ş´Î·ÇÊ£ÓàbµÄºÍ B
+	 * æ±‚æ¨¡pçš„æ‰€æœ‰æ»¡è¶³1â‰¤a<pçš„äºŒæ¬¡éå‰©ä½™bçš„å’Œ B
 	 * 
 	 * @param p
 	 * @return
@@ -61,7 +61,7 @@ public class ModPsqar {
 	}
 
 	/**
-	 * ÇóÀÕÈÃµÂ·ûºÅµÄ¼òÂª·½·¨
+	 * æ±‚å‹’è®©å¾·ç¬¦å·çš„ç®€é™‹æ–¹æ³•
 	 * 
 	 * @param q
 	 * @param p

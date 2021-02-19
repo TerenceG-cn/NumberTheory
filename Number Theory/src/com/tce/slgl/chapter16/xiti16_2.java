@@ -2,7 +2,7 @@ package com.tce.slgl.chapter16;
 
 public class xiti16_2 {
 	/**
-	 * ÇóaµÄk´Î·½Ä£m£¬Öğ´ÎÆ½·½·¨
+	 * æ±‚açš„kæ¬¡æ–¹æ¨¡mï¼Œé€æ¬¡å¹³æ–¹æ³•
 	 * 
 	 * @param a
 	 * @param k
@@ -30,8 +30,8 @@ public class xiti16_2 {
 //		System.out.println(funaKm(47, 258008, 1315171));//1296608
 
 		/*
-		 * 16.3 System.out.println(funaKm(7, 7386, 7387));//702,7387²»ÊÇËØÊı
-		 * System.out.println(funaKm(7, 7392, 7393));//1,7393¿ÉÄÜÊÇËØÊı(Êµ¼ÊÉÏ7393ÊÇÒ»¸öËØÊı)
+		 * 16.3 System.out.println(funaKm(7, 7386, 7387));//702,7387ä¸æ˜¯ç´ æ•°
+		 * System.out.println(funaKm(7, 7392, 7393));//1,7393å¯èƒ½æ˜¯ç´ æ•°(å®é™…ä¸Š7393æ˜¯ä¸€ä¸ªç´ æ•°)
 		 */
 
 		/* 16.5 */

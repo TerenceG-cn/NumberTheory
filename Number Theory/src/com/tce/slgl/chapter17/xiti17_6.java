@@ -7,8 +7,8 @@ import com.tce.slgl.chapter16.xiti16_2;
 
 public class xiti17_6 {
 	/**
-	 * ¶ÔÓë xµÄk´Î·½ Ä£mÓàkÇó½â Âú×ãgcd(k,¦µ(m))=1£¬gcd(b,m)=1 ÓÉÏßĞÔ·½³Ì
-	 * ku-¦µ(m)b=1=gcd(k,¦µ(m))¿ÉÒÔµÃµ½Ò»×é½âu£¬v ÓÉÅ·À­¹«Ê½ bµÄ¦µ(m)´Î·½ Ä£mÓà1
+	 * å¯¹ä¸ xçš„kæ¬¡æ–¹ æ¨¡mä½™kæ±‚è§£ æ»¡è¶³gcd(k,Î¦(m))=1ï¼Œgcd(b,m)=1 ç”±çº¿æ€§æ–¹ç¨‹
+	 * ku-Î¦(m)b=1=gcd(k,Î¦(m))å¯ä»¥å¾—åˆ°ä¸€ç»„è§£uï¼Œv ç”±æ¬§æ‹‰å…¬å¼ bçš„Î¦(m)æ¬¡æ–¹ æ¨¡mä½™1
 	 * 
 	 * @param power k
 	 * @param mod   m
@@ -22,7 +22,7 @@ public class xiti17_6 {
 		}
 		long eularM = xiti11_4.getEularFun(mod);
 		if (GCD_LCM.gcd(power, eularM) != 1) {
-			System.out.println("gcd(k, ¦µ(m)) != 1");
+			System.out.println("gcd(k, Î¦(m)) != 1");
 			return 0;
 		}
 		long u = xiti6_3.fun(power, eularM)[0];

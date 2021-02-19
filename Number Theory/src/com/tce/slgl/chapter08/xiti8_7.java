@@ -3,7 +3,7 @@ package com.tce.slgl.chapter08;
 import com.tce.slgl.chapter05.GCD_LCM;
 import com.tce.slgl.chapter06.xiti6_3;
 
-//½âÍ¬ÓàÊ½·½³Ì
+//è§£åŒä½™å¼æ–¹ç¨‹
 public class xiti8_7 {
 	public static long congruence(long a, long c, long m) {
 		long g = GCD_LCM.gcd(a, m);
@@ -11,14 +11,14 @@ public class xiti8_7 {
 		long xk=0;
 		
 		if (c % g != 0) {
-			System.out.println("" + a + "x" + " ¡Ô " + c + "(mod " + m + ")ÎŞ½â");
+			System.out.println("" + a + "x" + " â‰¡ " + c + "(mod " + m + ")æ— è§£");
 			System.out.println("gcd(a,m) = "+g);
 			System.out.println("---------------------------------");
 			return xk;
 		}
 		long x0 = c * u0 / g;
 		// System.out.println("u0:"+u0+" g:"+g+" x0:"+x0);//test
-		System.out.println("" + a + "x" + " ¡Ô " + c + "(mod " + m + ")µÄ½â¹²ÓĞ" + g + "¸ö");
+		System.out.println("" + a + "x" + " â‰¡ " + c + "(mod " + m + ")çš„è§£å…±æœ‰" + g + "ä¸ª");
 		for (int k = 0; k < g; k++) {
 			xk = x0 + k * m / g;
 			while(xk>m) {
