@@ -5,7 +5,7 @@ import static com.tce.slgl.chapter15.xiti15_7.funs;
 
 import java.util.concurrent.CountDownLatch;;
 
-public class FunσTask implements Runnable {
+class FunσTask implements Runnable {
 	private long start;
 	private long end;
 	private CountDownLatch latch;

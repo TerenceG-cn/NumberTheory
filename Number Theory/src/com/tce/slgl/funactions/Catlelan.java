@@ -3,7 +3,6 @@ package com.tce.slgl.funactions;
 import java.math.*;
 import java.util.*;
 public class Catlelan {
-	
   
   public static void main(String[] args) {
       Scanner cin = new Scanner(System.in);//需要第几个卡特兰数
