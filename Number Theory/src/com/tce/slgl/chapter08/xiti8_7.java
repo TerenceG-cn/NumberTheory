@@ -1,13 +1,14 @@
 package com.tce.slgl.chapter08;
 
-import com.tce.slgl.chapter05.GCD_LCM;
-import com.tce.slgl.chapter06.xiti6_3;
-
+import com.tce.slgl.utils.EuclideanAlgorithm;
+import com.tce.slgl.chapter06.Ex3;
+import com.tce.slgl.utils.CustomSolution;
 //解同余式方程
 public class xiti8_7 {
 	public static long congruence(long a, long c, long m) {
-		long g = GCD_LCM.gcd(a, m);
-		long u0 = xiti6_3.fun(a, 0 - m)[0];
+		long g = EuclideanAlgorithm.gcd(a, m);
+		long u0;
+		u0 = CustomSolution.fun1(a, 0 - m)[0];
 		long xk=0;
 		
 		if (c % g != 0) {

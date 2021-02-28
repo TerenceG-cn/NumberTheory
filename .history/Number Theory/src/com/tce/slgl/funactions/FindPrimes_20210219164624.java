@@ -1,4 +1,4 @@
-package com.tce.slgl.funactions;
+package com.tce.slgl.utils;
 
 /**
  * 小于n的所有素数

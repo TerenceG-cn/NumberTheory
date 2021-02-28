@@ -1,4 +1,4 @@
-package com.tce.slgl.funactions;
+package com.tce.slgl.utils;
 
 import java.util.HashMap;
 import java.util.Map;

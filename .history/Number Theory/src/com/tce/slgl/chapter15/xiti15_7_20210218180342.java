@@ -3,66 +3,66 @@ package com.tce.slgl.chapter15;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.tce.slgl.funactions.PrimeFactors;
+import com.tce.slgl.utils.PrimeFactors;
 
 /**
- * ±àÐ´³ÌÐò¼ÆËã¦Ò(n)£¬¦Ò(n)ÊÇnµÄËùÓÐÒòÊýÖ®ºÍ 1.½«n·Ö½âÎªËØÊý³Ë»ý 2.ÀûÓÃ¦Ò(n)Á½¸öÐÔÖÊ
+ * ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(n)ï¿½ï¿½ï¿½ï¿½(n)ï¿½ï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ 1.ï¿½ï¿½nï¿½Ö½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ 2.ï¿½ï¿½ï¿½Ã¦ï¿½(n)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 
  * @author 10352
  *
  */
 public class xiti15_7 {
 	/**
-	 * ËØÊýÃÝ´ÎµÄ¦ÒÖµ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ÎµÄ¦ï¿½Öµ
 	 * 
-	 * @param p ËØÊý
-	 * @param k ÃÝ´Î
-	 * @return ¦ÒÖµ
+	 * @param p ï¿½ï¿½ï¿½ï¿½
+	 * @param k ï¿½Ý´ï¿½
+	 * @return ï¿½ï¿½Öµ
 	 */
-	public static long fun¦ÒWithPrime(long p, int k) {
+	public static long funï¿½ï¿½WithPrime(long p, int k) {
 		return (long) ((Math.pow(p, k + 1) - 1) / (p - 1));
 	}
 
-	public static long fun¦Ò(long n) {
+	public static long funï¿½ï¿½(long n) {
 		if (n < 1)
 			return 0;
 		Map<Long, Integer> factors = PrimeFactors.calc3(n);
 		long result = 1l;
 
 		for (Entry<Long, Integer> f : factors.entrySet()) {
-			result *= fun¦ÒWithPrime(f.getKey(), f.getValue());
+			result *= funï¿½ï¿½WithPrime(f.getKey(), f.getValue());
 		}
 
 		return result;
 	}
 
 	/**
-	 * s(n) = ¦Ò(n)-n
+	 * s(n) = ï¿½ï¿½(n)-n
 	 * 
 	 * @param n
 	 * @return
 	 */
 	public static long funs(long n) {
-		return fun¦Ò(n) - n;
+		return funï¿½ï¿½(n) - n;
 	}
 
 	public static void main(String[] args) {
 //		int bz = 0, wq = 0, gs = 0;
 //		for (int i = 2; i < 101; i++) {
-//			int ¦ÒN = fun¦Ò(i);
-//			System.out.print("¦Ò(" + i + ") = " + ¦ÒN + "\t");
-//			if (¦ÒN > 2 * i) {
-//				System.out.println(" " + i + "ÊÇ¹ýÊ£Êý");
+//			int ï¿½ï¿½N = funï¿½ï¿½(i);
+//			System.out.print("ï¿½ï¿½(" + i + ") = " + ï¿½ï¿½N + "\t");
+//			if (ï¿½ï¿½N > 2 * i) {
+//				System.out.println(" " + i + "ï¿½Ç¹ï¿½Ê£ï¿½ï¿½");
 //				gs++;
-//			} else if (¦ÒN < 2 * i) {
-//				System.out.println(" " + i + "ÊÇ²»×ãÊý");
+//			} else if (ï¿½ï¿½N < 2 * i) {
+//				System.out.println(" " + i + "ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½");
 //				bz++;
 //			} else {
-//				System.out.println(" " + i + "ÊÇÍêÈ«Êý");
+//				System.out.println(" " + i + "ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½");
 //				wq++;
 //			}
 //		}
-//		System.out.println("²»×ãÊý£º" + bz + "ÍêÈ«Êý£º" + wq + "¹ýÊ£Êý£º" + gs);
+//		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + bz + "ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½" + wq + "ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½" + gs);
 
 //		System.out.println(funs(18048976));
 //		System.out.println(funs(20100368));

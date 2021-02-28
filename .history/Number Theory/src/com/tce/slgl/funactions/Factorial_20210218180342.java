@@ -1,8 +1,8 @@
-package com.tce.slgl.funactions;
+package com.tce.slgl.utils;
 
 public class Factorial {
 	/**
-	 * ÇóÊýxµÄ½×³Ë
+	 * ï¿½ï¿½ï¿½ï¿½xï¿½Ä½×³ï¿½
 	 * @param x
 	 * @return
 	 */

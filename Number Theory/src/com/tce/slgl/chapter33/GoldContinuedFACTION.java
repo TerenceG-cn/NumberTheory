@@ -2,6 +2,7 @@ package com.tce.slgl.chapter33;
 
 import java.math.BigDecimal;
 
+
 public class GoldContinuedFACTION {
     public static void main(String[] args) {
         BigDecimal bd = new BigDecimal(1);

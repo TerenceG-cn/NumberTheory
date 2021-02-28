@@ -1,13 +1,13 @@
-package com.tce.slgl.funactions;
+package com.tce.slgl.utils;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * ½«ÈÎÒâ×ÔÈ»Êý·Ö½âÎªÖÊÊýµÄ³Ë»ý
- * 
- * @author 10352
- *
+ *@classname         PrimeFactors
+ *@description       ç´ å› æ•°åˆ†è§£
+ *@author            TerenceG
+ *@lastmodifydate    2021/2/28
  */
 public class PrimeFactors {
 	public static Map<Integer, Integer> calc1(int number) {
@@ -36,7 +36,6 @@ public class PrimeFactors {
 		return factors;
 	}
 
-	/* ÄÚ²ãÑ­»· */
 	public static Map<Long, Integer> calc2(long number) {
 		Map<Long, Integer> factors = new HashMap<Long, Integer>();
 
@@ -89,7 +88,7 @@ public class PrimeFactors {
 //			System.out.println(i + ": " + PrimeFactors.calc2(i));
 //		}
 //		long endTime = System.currentTimeMillis() / 1000;
-//		System.out.println("×ÜºÄÊ±£º" + (endTime - startTime));
+//		System.out.println("??????" + (endTime - startTime));
 
 //		System.out.println(PrimeFactors.calc3(9999973));
 //		System.out.println(PrimeFactors.calc3(9991));

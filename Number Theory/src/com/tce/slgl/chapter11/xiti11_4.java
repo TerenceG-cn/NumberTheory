@@ -3,7 +3,7 @@ package com.tce.slgl.chapter11;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.tce.slgl.funactions.PrimeFactors;
+import com.tce.slgl.utils.PrimeFactors;
 
 public class xiti11_4 {
 

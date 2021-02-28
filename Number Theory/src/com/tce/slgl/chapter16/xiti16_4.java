@@ -2,7 +2,7 @@ package com.tce.slgl.chapter16;
 
 import java.util.Random;
 
-import com.tce.slgl.funactions.PrimeFactors;
+import com.tce.slgl.utils.PrimeFactors;
 
 public class xiti16_4 {
 	/**

@@ -1,17 +1,17 @@
-package com.tce.slgl.funactions;
-//¿¨ÌØÀ¼ÊýµÝÍÆ¹«Ê½h(n)=h(n-1)*(4*n-2)/(n+1);
+package com.tce.slgl.utils;
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¹ï¿½Ê½h(n)=h(n-1)*(4*n-2)/(n+1);
 import java.math.*;
 import java.util.*;
 public class Catlelan {
 	
   
   public static void main(String[] args) {
-      Scanner cin = new Scanner(System.in);//ÐèÒªµÚ¼¸¸ö¿¨ÌØÀ¼Êý
-      BigInteger dp[];//¶¨ÒåÒ»¸öÊý×é
-      dp=new BigInteger[1000];//¹æ¶¨Êý×éµÄ´óÐ¡
+      Scanner cin = new Scanner(System.in);//ï¿½ï¿½Òªï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      BigInteger dp[];//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      dp=new BigInteger[1000];//ï¿½æ¶¨ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡
       dp[1]=BigInteger.valueOf(1);
       int i,m;
-      for(i=2;i<1000;i++)//¿¨ÌØÀ¼Êý´ò±í
+      for(i=2;i<1000;i++)//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
       {
           dp[i]=dp[i-1].multiply(BigInteger.valueOf(4*i-2)).divide(BigInteger.valueOf(i+1));  
       }

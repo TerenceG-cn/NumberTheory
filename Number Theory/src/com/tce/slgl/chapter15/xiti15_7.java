@@ -3,7 +3,7 @@ package com.tce.slgl.chapter15;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import com.tce.slgl.funactions.PrimeFactors;
+import com.tce.slgl.utils.PrimeFactors;
 
 /**
  * 编写程序计算σ(n)，σ(n)是n的所有因数之和 1.将n分解为素数乘积 2.利用σ(n)两个性质

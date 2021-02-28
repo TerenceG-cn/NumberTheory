@@ -9,7 +9,7 @@ public class xiti33_3 {
         int i=0;
         while(i++<30) {
             System.out.println(ri);
-            System.out.println("|r"+i+"-¦Ã|="+Math.abs(GOLD-ri));
+            System.out.println("|r"+i+"-Î³|="+Math.abs(GOLD-ri));
             ri = 1 + Math.pow(ri, -1);
         }
     }

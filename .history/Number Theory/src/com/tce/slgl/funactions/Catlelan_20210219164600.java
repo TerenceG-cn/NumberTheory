@@ -1,4 +1,4 @@
-package com.tce.slgl.funactions;
+package com.tce.slgl.utils;
 //卡特兰数递推公式h(n)=h(n-1)*(4*n-2)/(n+1);
 import java.math.*;
 import java.util.*;

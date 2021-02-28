@@ -2,15 +2,15 @@ package com.tce.slgl.chapter16;
 
 import java.util.Random;
 
-import com.tce.slgl.funactions.PrimeFactors;
+import com.tce.slgl.utils.PrimeFactors;
 
 public class xiti16_4 {
 	/**
-	 * ´óËØÊý¼ì²â
-	 * Ë¼Â·£º
-	 * Ñ¡È¡2µ½n-1Ö®¼äµÄËæ»ú10¸öÊýai
-	 * ÅÐ¶Ï aiµÄn-1´Î·½Ä£n µÈÓÚ 1£¿£¨ÓÉ·ÑÂíÐ¡¶¨ÀíµÃ nÊÇÖÊÊýÒ»¶¨ÊÇËØÊý£¬·´Ö®²»³ÉÁ¢£¬ÓÐ·´Àý¿¨Ã×Ðª¶ûÊý£©
-	 * ÔÙÀûÓÃËØÒòÊý·Ö½â½øÒ»²½ÅÐ¶Ï
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * Ë¼Â·ï¿½ï¿½
+	 * Ñ¡È¡2ï¿½ï¿½n-1Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½ai
+	 * ï¿½Ð¶ï¿½ aiï¿½ï¿½n-1ï¿½Î·ï¿½Ä£n ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ï¿½É·ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð¶ï¿½
 	 * @param num
 	 * @return
 	 */
@@ -18,17 +18,17 @@ public class xiti16_4 {
 		Random random=new Random();
 		long[] randomArray=new long[100];
 		for(int i=0;i<randomArray.length;i++) {
-			randomArray[i]=Math.abs(random.nextLong())%(num-1)+1L;//Ñ¡È¡2Óën-1Ö®¼äµÄ10¸öËæ»úÊý
+			randomArray[i]=Math.abs(random.nextLong())%(num-1)+1L;//Ñ¡È¡2ï¿½ï¿½n-1Ö®ï¿½ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		}
 		for(int j=0;j<randomArray.length;j++) {
 			if(xiti16_2.funaKm(randomArray[j], num-1, num)!=1) {
-				//System.out.println(num+"ÊÇºÏÊý£¡");
+				//System.out.println(num+"ï¿½Çºï¿½ï¿½ï¿½ï¿½ï¿½");
 				return false;
 			}
 		}
-		//System.out.println(num+"¿ÉÄÜÊÇËØÊý¡£");
+		//System.out.println(num+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		if(PrimeFactors.calc3(num).containsKey(num)) {
-			System.out.println(num+"ÊÇËØÊý£¡");
+			System.out.println(num+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			return true;
 		}
 		return false;
