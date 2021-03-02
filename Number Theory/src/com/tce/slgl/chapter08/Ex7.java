@@ -1,10 +1,5 @@
 package com.tce.slgl.chapter08;
 
-import com.tce.slgl.utils.EuclideanAlgorithm;
-import com.tce.slgl.utils.CustomSolution;
-
-import java.util.Objects;
-
 import static com.tce.slgl.utils.Congruence.congruence;
 
 /**

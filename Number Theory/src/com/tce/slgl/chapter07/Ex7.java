@@ -12,7 +12,7 @@ public class Ex7 {
         getPrimeFactors(7393);
     }
 
-    public static void getPrimeFactors(int num) {
+    private static void getPrimeFactors(int num) {
         int i = 2;
         if (num == i) {
             System.out.println(num);

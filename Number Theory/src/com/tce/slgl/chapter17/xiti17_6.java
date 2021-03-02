@@ -1,7 +1,7 @@
 package com.tce.slgl.chapter17;
 
 import com.tce.slgl.utils.EuclideanAlgorithm;
-import com.tce.slgl.chapter11.xiti11_4;
+import com.tce.slgl.chapter11.Ex4;
 import com.tce.slgl.chapter16.xiti16_2;
 import com.tce.slgl.utils.CustomSolution;
 
@@ -30,7 +30,7 @@ public class xiti17_6 {
 			System.out.println("gcd(b, mod) != 1");
 			return 0;
 		}
-		long eularM = xiti11_4.getEularFun(mod);
+		long eularM = Ex4.getEularFun(mod);
 		if (EuclideanAlgorithm.gcd(power, eularM) != 1) {
 			System.out.println("gcd(k, Φ(m)) != 1");
 			return 0;
