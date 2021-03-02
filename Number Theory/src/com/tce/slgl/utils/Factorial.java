@@ -6,8 +6,8 @@ public class Factorial {
 	 * @param x
 	 * @return
 	 */
-	static long getFactorial(int x) {
-		if(x==0) return 1;
+	public static long getFactorial(int x) {
+		if(x==0) {return 1;}
 		return x*getFactorial(x-1);
 	}
 	public static void main(String[] args) {

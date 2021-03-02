@@ -2,18 +2,24 @@ package com.tce.slgl.chapter10;
 
 import com.tce.slgl.utils.EuclideanAlgorithm;
 
-public class xiti10_1 {
+/**
+ * @author TerenceG
+ * @classname Ex1 todo
+ * @description 习题10.1
+ * @lastmodifydate 2021/3/2
+ */
+public class Ex1 {
 
 	public static void main(String[] args) {
 		int m;
 		for (m = 1; m < 17; m++) {
-			int B = 1;
+			int b = 1;
 			for (int j = 1; j < m; j++) {
 				if (EuclideanAlgorithm.gcd(j, m) == 1) {
-					B *= j;
+					b *= j;
 				}
 			}
-			System.out.println("m="+m+"\tB="+B+"\t\tB??1(mode m) or B??1(mode m)\t"+ B%m+"\tvt"+(B*B)%m);
+			System.out.println("m=" + m + "\tB=" + b + "\t\tB??1(mode m) or B??1(mode m)\t" + b % m + "\tvt" + (b * b) % m);
 		}
 //		int B=1,count=0;
 //		for (int j = 1; j < 3750; j++) {

@@ -2,11 +2,18 @@ package com.tce.slgl.chapter10;
 
 import java.util.Scanner;
 
+import static com.tce.slgl.utils.Congruence.congruence;
+/**
+ * @author TerenceG
+ * @classname CongruenceSystem
+ * @description Âêå‰ΩôÂºèÊñπÁ®ã
+ * @lastmodifydate 2021/3/2
+ */
 public class CongruenceSystem {
 
 	public static long cgrResult(long[] params) {
 		long b = params[0], m = params[1], c = params[2], n = params[3];
-		long y = com.tce.slgl.chapter08.xiti8_7.congruence(m, c - b, n);
+		long y = congruence(m, c - b, n);
 		while (y < 0) {
 			y += n;
 		}
@@ -15,7 +22,8 @@ public class CongruenceSystem {
 	}
 
 	public static void main(String[] args) {
-		long[] params = new long[4];// b,m,c,n;x°‘b(mod m),x°‘c(mod n)
+		// b,m,c,n;x‚â°b(mod m),x‚â°c(mod n)
+		long[] params = new long[4];
 		for (int i = 0; i < params.length; i++) {
 			params[i] = new Scanner(System.in).nextLong();
 		}
