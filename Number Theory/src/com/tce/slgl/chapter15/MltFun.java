@@ -3,8 +3,13 @@ package com.tce.slgl.chapter15;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-public class Mltfun {
+/**
+ * @author TerenceG
+ * @classname MltFun
+ * @description todo
+ * @lastmodifydate 2021/3/8
+ */
+public class MltFun {
 	public static void main(String[] args) {
 
 		int threadNum = 10;
@@ -22,8 +27,6 @@ public class Mltfun {
 			tmp += len;
 			endN[i] = tmp - 1;
 		}
-//		System.out.println(startN[5]);
-//		System.out.println(endN[5]);
 		try {
 			ExecutorService exec = Executors.newCachedThreadPool();
 			long startTime = System.currentTimeMillis() / 1000;
@@ -33,7 +36,8 @@ public class Mltfun {
 			}
 			latch.await();
 			long endTime = System.currentTimeMillis() / 1000;
-			System.out.println("运行时间：" + (endTime - startTime) + " s");//805984760  运行时间：66321 s
+			//805984760  运行时间：66321 s
+			System.out.println("运行时间：" + (endTime - startTime) + " s");
 			exec.shutdown();
 		} catch (InterruptedException e) {
 			e.printStackTrace();

@@ -1,7 +1,7 @@
 package com.tce.slgl.chapter09;
 
 import static com.tce.slgl.utils.Congruence.congruence;
-import static com.tce.slgl.utils.Factorial.getFactorial;
+import static com.tce.slgl.utils.FactorialAndPower.getFactorial;
 
 /**
  * @author TerenceG

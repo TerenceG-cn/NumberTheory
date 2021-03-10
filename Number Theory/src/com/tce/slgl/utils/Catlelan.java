@@ -19,14 +19,14 @@ public class Catlelan {
      * @Return: java.math.BigInteger[]
      */
     public static BigInteger[] getCatlelanList(int size) {
-        BigInteger dp[];//定义一个数组
+        BigInteger[] dp;//定义一个数组
         //规定数组的大小
         dp = new BigInteger[size];
         dp[1] = BigInteger.valueOf(1);
         int i;
         //卡特兰数打表
         for (i = 2; i < size; i++) {
-            dp[i] = dp[i - 1].multiply(BigInteger.valueOf(4 * i - 2)).divide(BigInteger.valueOf(i + 1));
+            dp[i] = dp[i - 1].multiply(BigInteger.valueOf(4L * i - 2)).divide(BigInteger.valueOf(i + 1));
         }
         return dp;
     }

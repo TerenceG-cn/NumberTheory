@@ -33,7 +33,7 @@ public class EuclideanAlgorithm {
     }
 
     public static void main(String[] args) {
-        /**
+        /*
          * gcd(12345,67890)
          * gcd(54321,9876)
          * gcd(9048, 1645)

@@ -1,13 +1,22 @@
 package com.tce.slgl.chapter15;
 
-import static com.tce.slgl.chapter15.xiti15_7.funσ;
+import static com.tce.slgl.utils.EulerFunction.fun;
 
-public class eular_proj_23 {
+/**
+ * @author TerenceG
+ * @classname EularProject23
+ * @description 欧拉计划23
+ * @lastmodifydate 2021/3/7
+ */
+public class EularProject23 {
     public static void main(String[] args) {
         int[] isPerfect = new int[28124];
         for (int i = 0; i < 28124; i++) {
-            if (funσ(i) > (2 * i)) isPerfect[i] = 1;
-            else isPerfect[i] = 0;
+            if (fun(i) > (2 * i)) {
+                isPerfect[i] = 1;
+            } else {
+                isPerfect[i] = 0;
+            }
         }
         int count = 0;
         for (int i = 28123; i > 0; i--) {
