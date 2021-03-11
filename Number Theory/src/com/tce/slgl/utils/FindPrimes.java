@@ -19,11 +19,11 @@ public class FindPrimes {
     /**
      * 存储标记
      */
-    private static boolean[] check = new boolean[MAX_LENGTH_CHECK];
+    private static final boolean[] check = new boolean[MAX_LENGTH_CHECK];
     /**
      * 存储素数
      */
-    private static int[] primeList = new int[MAX_LENGTH_PRIMELIST];
+    private static final int[] primeList = new int[MAX_LENGTH_PRIMELIST];
 
     /**
      * @author TerenceG
@@ -32,14 +32,14 @@ public class FindPrimes {
      * @Param: * @param null
      * @Return:
      */
-    public static void Eratosthenes(int num) {
+    public static void eratosthenes(int num) {
         int count = 0;
         for (int indexI = 2; indexI <= num; indexI++) {
             // 当 indexI 不是被剔除的数时，将 indexI 留下
             if (!check[indexI]) {
                 primeList[count++] = indexI;
             }
-            /**
+            /*
              * 剔除 indexI 的倍数
              * 改进 int indexJ = indexI *indexI，但此时最大算到int indexJ = indexI* indexI
              */
@@ -50,20 +50,16 @@ public class FindPrimes {
     }
 
     /**
-     * 欧拉筛法：保证每个合数只会被它的最小质因数筛掉，时间复杂度降低到O(n)。 每一个数都去乘以当前素数表里面已有的数，当 indexI 是合数，且
-     * indexI % primeList[indexJ] == 0 时，只能乘以第一个素数 2
-     */
-    /**
-     * @author          TerenceG
-     * @lastmodifydate  2021/2/28
-     * @description:    欧拉筛法
+     * @author TerenceG
+     * @lastmodifydate 2021/2/28
+     * @description: 欧拉筛法
      * 保证每个合数只会被它的最小质因数筛掉，时间复杂度降低到O(n)。
      * 每一个数都去乘以当前素数表里面已有的数，当 indexI 是合数，且
      * indexI % primeList[indexJ] == 0 时，只能乘以第一个素数 2
-     * @Param:       * @param num
-     * @Return:     void
+     * @Param: * @param num
+     * @Return: void
      */
-    public static void Euler(int num) {
+    public static void euler(int num) {
         int count = 0;
         for (int indexI = 2; indexI <= num; indexI++) {
             if (!check[indexI]) {
@@ -89,7 +85,7 @@ public class FindPrimes {
         }
     }
 
-    public static void Euler2(int num) {
+    public static void euler2(int num) {
         int count = 0;
         for (int i = 2; i < num; i++) {
             if (!check[i]) {
@@ -98,35 +94,34 @@ public class FindPrimes {
             for (int j = 0; j < count && i * primeList[j] <= num; j++) {
                 check[i * primeList[j]] = true;
                 //偶合数只能*2
-                if (i % primeList[j] == 0)
-                {
+                if (i % primeList[j] == 0) {
                     break;
                 }
             }
         }
     }
 
-    public static int[] getPL() {
+    public static int[] getPl() {
         return primeList;
     }
 
     public static void main(String[] args) {
 
         // Eratosthenes(10);
-        Euler2(10_000_000);
+        euler2(10_000_000);
 
-        for (int i = 0; FindPrimes.getPL()[i] != 0; i++) {
-            System.out.println("第" + (i + 1) + "个素数：" + FindPrimes.getPL()[i]);
+        for (int i = 0; FindPrimes.getPl()[i] != 0; i++) {
+            System.out.println("第" + (i + 1) + "个素数：" + FindPrimes.getPl()[i]);
         }
 
     }
-/**
- *
- *
- * n=100 : 25 n=1000: 168 n=10000 : 1229 n=100000: 9592 n=1000000: 78498
- * n=10000000: 664579
- *
- * @author 10352
- *
- */
+    /*
+     *
+     *
+     * n=100 : 25 n=1000: 168 n=10000 : 1229 n=100000: 9592 n=1000000: 78498
+     * n=10000000: 664579
+     *
+     * @author 10352
+     *
+     */
 }

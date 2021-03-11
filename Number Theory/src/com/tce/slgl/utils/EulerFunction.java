@@ -1,6 +1,7 @@
 package com.tce.slgl.utils;
 
 import java.util.Map;
+
 /**
  * @author TerenceG
  * @classname EulerFunction
@@ -8,12 +9,13 @@ import java.util.Map;
  * @lastmodifydate 2021/3/7
  */
 public class EulerFunction {
+
     /**
-     * 素数幂次的σ值
-     *
-     * @param p 素数
-     * @param k 幂次
-     * @return σ值
+     * @author TerenceG
+     * @lastmodifydate 2021/2/28
+     * @description: 求最大公约数
+     * @Param: * @param p 素数 * @param k 幂次
+     * @Return: long σ值
      */
     public static long funWithPrime(long p, int k) {
         return (long) ((Math.pow(p, k + 1) - 1) / (p - 1));
@@ -34,10 +36,11 @@ public class EulerFunction {
     }
 
     /**
-     * s(n) = σ(n)-n
-     *
-     * @param n
-     * @return
+     * @author TerenceG
+     * @lastmodifydate 2021/3/11
+     * @description: s(n) = σ(n)-n
+     * @Param: * @param n
+     * @Return: long σ值
      */
     public static long funs(long n) {
         return fun(n) - n;

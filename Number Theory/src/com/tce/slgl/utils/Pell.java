@@ -1,6 +1,5 @@
 package com.tce.slgl.utils;
 
-import com.tce.slgl.utils.ContinuedFractionUtils;
 
 import java.util.HashMap;
 import java.util.List;
@@ -26,7 +25,7 @@ public class Pell {
         List<Integer> res = ContinuedFractionUtils.getCFbySR(d);
         res.remove(res.size() - 1);
         int size = res.size();
-        int lmn[] = new int[3];
+        int[] lmn = new int[3];
         int[] tmp = new int[2];
         lmn[1] = 1;
         lmn[2] = res.remove(res.size() - 1);
@@ -79,8 +78,10 @@ public class Pell {
 
 
     public static void main(String[] args) {
-        //System.out.println(pell(41));//连分数 6，2，2，12
-        //System.out.println(pell(22));//4，1，2，4，2，1，8
+        //连分数 6，2，2，12
+        System.out.println(pell(41));
+        //连分数 4，1，2，4，2，1，8
+        System.out.println(pell(22));
         pellForAll(11);
     }
 

@@ -68,13 +68,6 @@ public class ModPsqar {
     }
 
     /**
-     * 求勒让德符号的简陋方法
-     *
-     * @param q
-     * @param p
-     * @return
-     */
-    /**
      * @author TerenceG
      * @lastmodifydate 2021/3/8
      * @description: 求勒让德符号的简陋方法
@@ -89,18 +82,18 @@ public class ModPsqar {
 
         List<Long> list = getP2(3011L);
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) == 81)
+            if (list.get(i) == 81) {
                 System.out.println(i);
+            }
         }
         System.out.println((int) (Math.pow(256, 2) + 14 * 256) % 337);
 
         long[] pNums = {5, 7, 11, 13, 17, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 91, 97};
-        //long[] aeqlB = {5,13,17,29,37,41,53,61,73,89,97};
-        //long[] aneqB = {7,11,23,31,43,47,59,67,71,79,83,91};
-        for (int i = 0; i < pNums.length; i++) {
-            System.out.print("A(" + pNums[i] + ") = " + getA(pNums[i]));
-            System.out.println("\tB(" + pNums[i] + ") = " + getB(pNums[i]));
-            System.out.println(getB(pNums[i]) % pNums[i] == 0);
+
+        for (long pNum : pNums) {
+            System.out.print("A(" + pNum + ") = " + getA(pNum));
+            System.out.println("\tB(" + pNum + ") = " + getB(pNum));
+            System.out.println(getB(pNum) % pNum == 0);
         }
 
 

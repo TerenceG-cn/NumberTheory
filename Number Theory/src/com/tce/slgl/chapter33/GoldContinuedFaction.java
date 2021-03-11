@@ -10,6 +10,7 @@ public class GoldContinuedFaction {
         for(int i=0;i<size;i++)
         {
             bd = bd.add(BigDecimal.ONE);
+            //todo
             bd= BigDecimal.ONE.divide(bd, 100, BigDecimal.ROUND_HALF_DOWN);
         }
         System.out.println((bd.add(new BigDecimal(1))).toString());
