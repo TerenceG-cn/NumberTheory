@@ -1,6 +1,6 @@
 package com.tce.slgl.chapter02;
 
-//找到一组有相同c值的本原勾股数组 todo bug：有非本源勾股数出现
+//找到一组有相同c值的本原勾股q数组 todo bug：有非本源勾股数出现
 public class Pythagorean1 {
 
     public static void main(String[] args) {

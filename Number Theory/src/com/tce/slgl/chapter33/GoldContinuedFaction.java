@@ -3,6 +3,9 @@ package com.tce.slgl.chapter33;
 import java.math.BigDecimal;
 
 
+/**
+ * @author TerenceG
+ */
 public class GoldContinuedFaction {
     public static void main(String[] args) {
         BigDecimal bd = new BigDecimal(1);
